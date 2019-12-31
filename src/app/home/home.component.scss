@@ -1,0 +1,30 @@
+.intro {
+  height: 100vh;
+  background: url('/assets/img/sample-background.jpg') no-repeat center center
+    fixed; // Photo by Charles on Unsplash
+  background-size: cover;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .intro-text {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    &,
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.mobile {
+  &.intro-text {
+    font-size: default;
+  }
+}

@@ -1,0 +1,22 @@
+<section
+  class="intro"
+  [ngClass]="{
+    mobile: isHandset$ | async,
+    'handset-portrait': isHandsetPortrait$ | async
+  }"
+>
+  <div class="overlay">
+    <img
+      src="assets/img/ngseattle.png"
+      alt="Angular Seattle Logo"
+      class="angular-seattle-logo"
+      id="angular-seattle-logo"
+      [ngClass]="{
+        mobile: isHandset$ | async
+      }"
+    />
+    <h1 class="intro-text" [ngClass]="{ mobile: isHandset$ | async }">
+      Welcome to Angular Seattle
+    </h1>
+  </div>
+</section>
